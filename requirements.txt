@@ -1,0 +1,27 @@
+# VidRAG - RAG-powered YouTube Q&A System
+# Core dependencies
+
+# LangChain ecosystem
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-openai>=0.0.5
+langchain-core>=0.1.0
+
+# OpenAI integration
+openai>=1.0.0
+
+# Vector database
+faiss-cpu>=1.7.4
+
+# YouTube transcript extraction
+youtube-transcript-api>=0.6.0
+
+# Text processing
+tiktoken>=0.5.0
+
+# Environment management
+python-dotenv>=1.0.0
+
+# Optional: For Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.0.0
