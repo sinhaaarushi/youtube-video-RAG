@@ -2,7 +2,7 @@
 
 **Retrieval-Augmented Generation system for asking questions about YouTube videos.**
 
-A sophisticated Python application that leverages Retrieval-Augmented Generation (RAG) to answer questions about YouTube videos by extracting transcripts, creating embeddings, and using AI to provide contextual answers.
+A Python application that uses Retrieval-Augmented Generation (RAG) to answer questions about YouTube videos.
 
 ## Project Motivation
 
@@ -18,7 +18,7 @@ The system extracts transcripts from YouTube videos, converts them into vector e
 ## ✨ Features
 
 -  **YouTube Transcript Extraction**: Automatically extracts video transcripts
--  **AI-Powered Q&A**: Uses GPT-4o-mini for intelligent question answering
+-  **Question answering using GPT models**: Uses GPT-4o-mini for intelligent question answering
 -  **Vector Search**: FAISS-based similarity search for relevant content
 -  **Smart Chunking**: Recursive text splitting with overlap for better context
 -  **Fast Retrieval**: Optimized top-4 retrieval (k=4) for reduced hallucinations
