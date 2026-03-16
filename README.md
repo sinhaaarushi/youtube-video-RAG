@@ -1,8 +1,14 @@
 # VidRAG 🎬🤖
 
-**RAG-powered YouTube Q&A System**
+**Retrieval-Augmented Generation system for asking questions about YouTube videos.**
 
 A sophisticated Python application that leverages Retrieval-Augmented Generation (RAG) to answer questions about YouTube videos by extracting transcripts, creating embeddings, and using AI to provide contextual answers.
+
+## Project Motivation
+
+Large video content can be difficult to search and navigate. This project explores how Retrieval-Augmented Generation (RAG) can be applied to YouTube transcripts to enable question-answering over video content.
+
+The system extracts transcripts from YouTube videos, converts them into vector embeddings, and retrieves the most relevant sections when a user asks a question.
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![LangChain](https://img.shields.io/badge/LangChain-0.1+-green.svg)](https://langchain.com)
@@ -122,13 +128,24 @@ The application will prompt you to:
 - **Text Processing**: Manages chunking and embedding generation
 - **Vector Search**: FAISS-based similarity search
 - **Question Answering**: LangChain-powered Q&A chain
+  
+## System Architecture
 
-## 📊 Performance
+The system follows a typical RAG pipeline:
 
-- **Chunking**: 168 chunks created from typical video transcript
-- **Retrieval**: Top-4 similarity search for optimal context
-- **Response Time**: Fast retrieval with reduced hallucinations
-- **Accuracy**: Context-aware answers based on video content
+YouTube Video  
+↓  
+Transcript Extraction  
+↓  
+Text Chunking  
+↓  
+Embedding Generation  
+↓  
+FAISS Vector Database  
+↓  
+Similarity Retrieval  
+↓  
+GPT Response Generation
 
 ## 🔧 Configuration
 
@@ -191,12 +208,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [FAISS](https://github.com/facebookresearch/faiss) for vector search
 - [youtube-transcript-api](https://github.com/jdepoix/youtube-transcript-api) for transcript extraction
 
-## 📞 Contact
+Maintained by Aarushi Sinha
 
-**Mehak Verma**
-- GitHub: [@sinhaaarushi](https://github.com/sinhaaarushi)
-- Project Link: [https://github.com/sinhaaarushi/VidRaG](https://github.com/sinhaaarushi/VidRaG)
-
----
-
-⭐ **Star this repository if you found it helpful!**
