@@ -14,6 +14,12 @@ The system extracts transcripts from YouTube videos, converts them into vector e
 [![LangChain](https://img.shields.io/badge/LangChain-0.1+-green.svg)](https://langchain.com)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-orange.svg)](https://openai.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+## System Flow
+The system processes YouTube videos using a Retrieval-Augmented Generation pipeline:
+
+YouTube Video → Transcript Extraction → Text Chunking → Embeddings → FAISS Vector Store → Similarity Retrieval → LLM → Answer
+
+This allows users to ask natural language questions about video content and receive context-aware answers.
 
 ##  Features
 
@@ -184,7 +190,14 @@ VidRaG/
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
+   
+## Use Cases
+This system can be used for:
+- Learning from educational YouTube videos
+- Searching technical tutorials
+- Video content summarization
+- Knowledge extraction from long videos
+- AI-powered video assistants
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
